@@ -17,10 +17,12 @@
     appearance: none;
     width: 20px;
     height: 20px;
-    background: #4caf50;
+    background: #000000;
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid #ddd;
+    position: relative;
+    top: 10px;
 }
 
 .slider-track {
@@ -38,24 +40,21 @@
     position: absolute;
     z-index: 2;
     height: 10px;
-    background: #4caf50;
+    background: #000000;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.slider-left-value,
-.slider-right-value {
+.slider-labels {
     position: absolute;
-    z-index: 2;
-    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 70px;
+}
+
+.slider-label-min,
+.slider-label-max {
+    color: #000;
     font-size: 14px;
-    top: -30px;
-}
-
-.slider-left-value {
-    left: 10px;
-}
-
-.slider-right-value {
-    right: 10px;
 }

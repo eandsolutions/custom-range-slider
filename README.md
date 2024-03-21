@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎛️ RangeSlider Component
 
-## Getting Started
+The `RangeSlider` is a versatile React component that provides a double-ended range slider for selecting a range of values. It's perfect for scenarios where you need to let users select a range within a larger set of values.
 
-First, run the development server:
+## 🚀 Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+To use the `RangeSlider` component, you need to import it from its file location:
+
+```typescript
+import RangeSlider from './components/RangeSlider';
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Usage
+Here's an example of how to use the RangeSlider component:
+    
+```typescript jsx
+<RangeSlider min={0} max={100} onChange={(value) => console.log(value)} />
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 Props
+The RangeSlider component accepts the following props:  
+* min: The minimum value of the range. This is a required prop.
+* max: The maximum value of the range. This is a required prop.
+* options: An optional array of numbers. If provided, the slider values will snap to these numbers.
+* onChange: A function that gets called whenever the range values change. It receives an object with min and max properties representing the current range values.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🎨 Styling
+The RangeSlider component uses CSS for styling. The styles can be found in the RangeSlider.css file. You can modify these styles to suit your needs.  
 
-## Learn More
+🧪##  Testing
+This component is tested using Jest and React Testing Library. The tests can be found in the RangeSlider.spec.tsx file. To run the tests, use the npm test command.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+npm run test
+```

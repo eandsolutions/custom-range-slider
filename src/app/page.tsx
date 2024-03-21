@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from './styles/page.module.css';
+import styles from '../styles/page.module.css';
 import Link from 'next/link';
 
 export default function Home() {
@@ -14,10 +14,10 @@ export default function Home() {
             styles and interactive elements make it a valuable addition to any UI toolkit.
           </p>
           <div className={styles.buttonContainer}>
-            <Link href="/custom-range-slider/src/pages/BoundedSlider">
+            <Link href="/BoundedSlider">
               <button className={styles.button}>Go to Exercise 1</button>
             </Link>
-            <Link href="/custom-range-slider/src/pages/FixedSlider">
+            <Link href="/FixedSlider">
               <button className={styles.button}>Go to Exercise 2</button>
             </Link>
           </div>
